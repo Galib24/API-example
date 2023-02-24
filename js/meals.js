@@ -10,6 +10,7 @@ const displayMeals = meals => {
     // console.log(meals)
     // step:1 container element
     const mealContainer = document.getElementById('meals-container');
+   mealContainer.innerHTML = '';
     meals.forEach(meal => {
         // console.log(meal)
         // step:2 create child for each element
@@ -22,7 +23,7 @@ const displayMeals = meals => {
         <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${meal.strMeal}</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">instruction: ${meal.strInstructions}</p>
         </div>
       </div>
         
