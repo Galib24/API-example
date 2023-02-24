@@ -15,6 +15,10 @@ const displayUser = user => {
     const image = document.getElementById('image');
     image.innerHTML = `
     <img src = "${user.results[0].picture.large}"/>
+    <h1>Location latitude: ${user.results[0].location.coordinates.latitude
+    }</h1>
+    <h1>Location latitude: ${user.results[0].location.country}</h1>
+
     
     `;
 }
